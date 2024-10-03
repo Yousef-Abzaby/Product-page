@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Styles.css">
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+  <body>
+    <div id="cart-box" class="cart">
+      <p>Cart</p>
+      <div class="cart-content">
+        <p id="empty-cart">Your cart is empty.</p>
+        <div id="shopping-items">
+          <div>
+            <img src="./images/image-product-1-thumbnail.jpg" alt="product-1">
+            <span><span>Fall Limited Edition Sneakers $125.00 x </span><span id="amount"></span><strong id="prize"> </strong></span>
+            <i id="delete" class="fa fa-trash"></i>
+          </div>
+          <button>Checkout</button>
+        </div>
+      </div>
+    </div>
+    <div id="hidden-images" class="wrap">
+      <div class="images-viewed">
+        <i id="close" class="fa fa-close"></i>
+        <div id="prev-btn" class="left-icon"><i id="previous" class="fa fa-angle-left"></i></div>
+        <div id="next-btn" class="right-icon"><i id="next" class="fa fa-angle-right"></i></div>
+        <div id="main-image" class="main"></div>
+        <div class="small">
+          <img id="hi-1" class="selected" src="./images/image-product-1-thumbnail.jpg" alt="product-1">
+          <img id="hi-2" src="./images/image-product-2-thumbnail.jpg" alt="product-2">
+          <img id="hi-3" src="./images/image-product-3-thumbnail.jpg" alt="product-3">
+          <img id="hi-4" src="./images/image-product-4-thumbnail.jpg" alt="product-4">
+        </div>
+      </div>
+    </div>
+    <header>
+      <i id="bars" class="fa fa-bars"></i>
+      <img id="logo" src="./images/logo.svg" alt="logo">
+      <nav>
+        <i id="close2" class="fa fa-close"></i>
+        <a href="">Collections</a>
+        <a href="">Men</a>
+        <a href="">Women</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+      </nav>
+      <img id="cart" src="./images/icon-cart.svg" alt="cart">
+      <img id="avatar" src="./images/image-avatar.png" alt="account image">
+      <span id="cart-text"></span>
+    </header>
+    <main>
+      <div class="wrapper">
+        <div class="left">
+          <div id="prev-btn2" class="left-icon"><i id="previous" class="fa fa-angle-left"></i></div>
+          <div id="next-btn2" class="right-icon"><i id="next" class="fa fa-angle-right"></i></div>
+          <img id="big-image" class="main" src="./images/image-product-1.jpg" alt="product-main">
+          <div class="images-container">
+            <img id="vi-1" class="selected" src="./images/image-product-1-thumbnail.jpg" alt="product-1">
+            <img id="vi-2" src="./images/image-product-2-thumbnail.jpg" alt="product-2">
+            <img id="vi-3" src="./images/image-product-3-thumbnail.jpg" alt="product-3">
+            <img id="vi-4" src="./images/image-product-4-thumbnail.jpg" alt="product-4">
+          </div>
+        </div>
+        <div class="right">
+          <p>sneaker company</p>
+          <h1>Fall Limited Edition<br>Sneakers</h1>
+          <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+            durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+          <h2 class="pric">$125.00<span>50%</span></h2>
+          <p class="canceled">$250.00</p>
+          <div class="buying">
+            <div class="js">
+              <img id="minus" src="./images/icon-minus.svg" alt="minus">
+              <span id="number">0</span>
+              <img id="plus" src="./images/icon-plus.svg" alt="plus">
+            </div>
+            <button id="add-btn">
+              <i class="fa fa-shopping-cart"></i>
+              Add to cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
